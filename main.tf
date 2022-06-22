@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------------------------------------------------
-# Azure Artifical Intelligence Development Environment - PBMM
+# Azure Artifical Intelligence Development Environment
 # ---------------------------------------------------------------------------------------------------------------------
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -77,7 +77,7 @@ module "databricks" {
 module "storage_account" {
   source = "./modules/storage_account"
 
-  storage_account_name      = "${var.prefix}csa${var.group}${var.user_defined}dls1"
+  storage_account_name      = "${var.prefix}csa${var.group}${var.user_defined}dls3"
   resource_group_name       = module.resource_group.resource_group_name
   location                  = module.resource_group.resource_group_location
 
